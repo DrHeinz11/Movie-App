@@ -13,7 +13,7 @@ function App() {
       justifyContent={"center"}
       bg={"gray.300"}
     >
-      <Card Portada="xv" Title="XCV" Year="2022" />
+      <Card Portada="https://pbs.twimg.com/media/FV8XGcvakAIy1yB?format=jpg&name=large" Title="XCV" Year="2022" />
       <Card Portada="xv" Title="XCV" Year="2022" />
       <Card Portada="xv" Title="XCV" Year="2022" />
       <Card Portada="xv" Title="XCV" Year="2022" />

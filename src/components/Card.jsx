@@ -13,7 +13,9 @@ const Card = ({ Portada, Title, Year }) => {
       boxShadow={"lg"}
       marginTop={"10px"}
       alignItems={"center"}
-      bg={'blackAlpha.300'}
+      bg={"blackAlpha.300"}
+      filter="grayscale(80%)"
+      _hover={{ filter: "none" }}
     >
       <Box
         w={"12"}
@@ -33,7 +35,7 @@ const Card = ({ Portada, Title, Year }) => {
         objectFit={"cover"}
       />
 
-      <Box alignSelf={'flex-start'} paddingInlineStart={'5px'} >
+      <Box alignSelf={"flex-start"} paddingInlineStart={"5px"}>
         <Text fontSize={"sm"}>Movie</Text>
         <Text
           fontSize={"xl"}
@@ -45,7 +47,6 @@ const Card = ({ Portada, Title, Year }) => {
           {Title}
         </Text>
       </Box>
-
     </Stack>
   );
 };
