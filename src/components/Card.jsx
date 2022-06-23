@@ -1,7 +1,7 @@
 import { Stack, Box, Image, Text } from "@chakra-ui/react";
 import "./Card.css";
 
-const Card = ({ Portada, Title, Year }) => {
+const Card = ({ Portada, Title, Year, Redirect }) => {
   return (
     <Stack
       gap={"xs"}
@@ -33,6 +33,7 @@ const Card = ({ Portada, Title, Year }) => {
         boxSize={"3xs"}
         borderRadius={"sm"}
         objectFit={"cover"}
+        onClick={Redirect}
       />
 
       <Box alignSelf={"flex-start"} paddingInlineStart={"5px"}>
