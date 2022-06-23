@@ -1,21 +1,20 @@
 import { Stack, Box, Image, Text } from "@chakra-ui/react";
 import "./Card.css";
 
-const Card = ({ Portada, Title, Year, Redirect }) => {
+const Card = ({ Portada, Title, Year}) => {
   return (
     <Stack
       gap={"xs"}
       p="10px"
       borderRadius={"md"}
       border={"1px"}
-      borderColor={"gray.400"}
+      borderColor={"blue.700"}
+      _hover={{ borderColor: "blue.500", boxShadow: "2xl" }}
       w={"2xs"}
       boxShadow={"lg"}
       marginTop={"10px"}
       alignItems={"center"}
       bg={"blackAlpha.300"}
-      filter="grayscale(80%)"
-      _hover={{ filter: "none" }}
     >
       <Box
         w={"12"}
@@ -24,7 +23,7 @@ const Card = ({ Portada, Title, Year, Redirect }) => {
         className="clip"
         alignSelf={"flex-start"}
       >
-        <Text bg={"gray.500"} color={"gray.900"}>
+        <Text bg={"blue.400"} color={"gray.900"}>
           {Year}
         </Text>
       </Box>
@@ -33,7 +32,8 @@ const Card = ({ Portada, Title, Year, Redirect }) => {
         boxSize={"3xs"}
         borderRadius={"sm"}
         objectFit={"cover"}
-        onClick={Redirect}
+        filter="grayscale(80%)"
+        _hover={{ filter: "none" }}
       />
 
       <Box alignSelf={"flex-start"} paddingInlineStart={"5px"}>
@@ -43,7 +43,7 @@ const Card = ({ Portada, Title, Year, Redirect }) => {
           borderBottom={"2px"}
           borderColor={"transparent"}
           width={"fit-content"}
-          _hover={{ borderColor: "gray.500" }}
+          _hover={{ borderColor: "blue.500" }}
         >
           {Title}
         </Text>
