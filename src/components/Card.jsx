@@ -13,6 +13,7 @@ const Card = ({ Portada, Title, Year }) => {
       boxShadow={"lg"}
       marginTop={"10px"}
       alignItems={"center"}
+      bg={'blackAlpha.300'}
     >
       <Box
         w={"12"}

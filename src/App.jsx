@@ -11,6 +11,7 @@ function App() {
       gap={"15px"}
       flexWrap={"wrap"}
       justifyContent={"center"}
+      bg={"gray.300"}
     >
       <Card Portada="xv" Title="XCV" Year="2022" />
       <Card Portada="xv" Title="XCV" Year="2022" />
